@@ -70,7 +70,6 @@ def resources():
     return render_template("Resources.html")
 
 
-
 if __name__ == "__main__":
     app.run()
 

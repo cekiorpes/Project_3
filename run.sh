@@ -1,0 +1,1 @@
+FLASK_APP=ukraine-conflict/app.py flask run

@@ -1,0 +1,1 @@
+web: gunicorn ukraine-conflict.app:app

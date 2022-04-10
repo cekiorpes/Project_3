@@ -28,7 +28,7 @@ def home():
     return render_template("index2.html")
 
 # Route to get data from database
-@app.route("/api/data", methods=['POST', 'GET'])
+@app.route("/api/data")
 def data():
     from models import Ukraine
     

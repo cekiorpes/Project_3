@@ -53,6 +53,23 @@ def data():
 
     return jsonify(results)
 
+@app.route("/maps")
+def maps():
+    return render_template("maps.html")
+
+@app.route("/dataPage")
+def dataPage():
+    return render_template("dataPage.html")
+
+@app.route("/charts")
+def charts():
+    return render_template("charts.html")
+
+@app.route("/Resources")
+def resources():
+    return render_template("Resources.html")
+
+
 
 if __name__ == "__main__":
     app.run()

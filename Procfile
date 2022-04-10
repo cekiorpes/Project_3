@@ -1,1 +1,1 @@
-web: gunicorn ukraine-conflict.app:app
+web: gunicorn cekiorpes-ukraine-conflict.app:app

@@ -110,7 +110,7 @@ const IncidentCount = {
 };
 
 // Getting our GeoJSON data
-d3.json("geojson.json").then(function (data) {
+d3.json("/api/geojson_data").then(function (data) {
   // console.log(data);
   
   // Creating a GeoJSON layer with the retrieved data

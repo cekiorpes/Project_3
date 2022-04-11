@@ -56,22 +56,16 @@ def data():
 
     return jsonify(results)
 
-@app.route("/maps", methods=['POST','GET'])
-def maps(): 
-    # geojson = request.json("geojson.json")
-    # fileData = 0;
-    # with open('geojson.json', 'r') as f:
-    #   fileData = json.load(f)
-    #   f.close()   
+@app.route("/maps")
+def maps():    
     return render_template("maps.html") 
 
-# @app.route("/api/geojson_data")
-# def geojson_data():
-    # geojson = app.config.from_file("geojson.json", load=json.load) 
-    # geojson = os.path.join(app.static_folder, "geojson.json")
-    # with open(geojson) as test_file:
-    #     data = json.load(test_file)
-    # return test_file  
+@app.route("/api/geojson_data")
+def geojson_data():
+    filename = os.path.join(app.static_folder, "geojson.json")
+    with open(filename) as geojson:
+        data = json.load(geojson)
+    return data  
 
 @app.route("/dataPage")
 def datapage():

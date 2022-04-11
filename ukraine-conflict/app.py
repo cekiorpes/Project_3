@@ -5,7 +5,9 @@ from flask import (
     render_template,
     jsonify,
     request,
-    redirect)
+    redirect,
+    json, 
+    current_app as app)
 import psycopg2
 from config import username
 from config import password
@@ -61,7 +63,15 @@ def maps():
     # with open('geojson.json', 'r') as f:
     #   fileData = json.load(f)
     #   f.close()   
-    return render_template("maps.html")     
+    return render_template("maps.html") 
+
+# @app.route("/api/geojson_data")
+# def geojson_data():
+    # geojson = app.config.from_file("geojson.json", load=json.load) 
+    # geojson = os.path.join(app.static_folder, "geojson.json")
+    # with open(geojson) as test_file:
+    #     data = json.load(test_file)
+    # return test_file  
 
 @app.route("/dataPage")
 def datapage():

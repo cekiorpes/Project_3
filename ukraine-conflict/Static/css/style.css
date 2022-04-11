@@ -237,3 +237,15 @@ body {
   .slider_section #carouselExampleIndicators li.active {
     border-color: #133e3f;
   }  
+
+  #blocks {
+    width: 100%;
+  }
+
+  .block {
+    float: left;
+    min-width: 480px;
+    max-width: 600px;
+    padding: 10px;
+    border: black 1px solid;
+  }

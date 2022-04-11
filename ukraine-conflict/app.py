@@ -9,9 +9,9 @@ from flask import (
     json, 
     current_app as app)
 import psycopg2
-from config import username
-from config import password
-from config import databse_uri
+# from config import username
+# from config import password
+# from config import databse_uri
 import json
 
 app = Flask(__name__)

@@ -25,10 +25,10 @@
     <!-- <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
     <!-- <link rel="stylesheet" href="/../static/css/ionicons.min.css"> -->
     <!-- <link rel="stylesheet" href="/../static/css/leaflet.extra-markers.min.css"> -->
-    <link rel="stylesheet" href="/Static/css/leaflet.extra-markers.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/leaflet.extra-markers.min.css') }}">
  
-    <link rel="stylesheet" href="/../static/css/style1.css" />
-    <link rel="stylesheet" href="/../Static/js/leaflet_sidebar/L.Control.Sidebar.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style1.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='/js/leaflet_sidebar/L.Control.Sidebar.css') }}">
 </head>
 <body>
     <div class="hero_area">
@@ -45,19 +45,22 @@
                     <div class="navbar-collapse ml-auto collapse show" id="navbarSupportedContent" style>
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="./index2.html">
+                                <a class="nav-link" href="{{ url_for('home') }}">
                                     Home
                                     <span class="Sr-only"></span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./maps.html"> Map </a>
+                                <a class="nav-link" href="{{ url_for('maps') }}"> Map </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./dataPage.html"> Data </a>
+                                <a class="nav-link" href="{{ url_for('charts') }}"> Conflict Effects </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./Resources.html"> Resources </a>
+                                <a class="nav-link" href="{{ url_for('datapage') }}"> Data </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('resources') }}"> Resources </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="https://github.com/mchrzanowski27/Project3"> Repository </a>
@@ -82,14 +85,14 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
-    <script src="/../Static/js/leaflet_sidebar/L.Control.Sidebar.js"></script>
+    <script src="{{ url_for('static', filename='/js/leaflet_sidebar/L.Control.Sidebar.js') }}"></script>
     
     <!-- Icons -->
-    <script src="/../Static/js/leaflet.extra-markers.min.js"></script>
+    <script src="{{ url_for('static', filename='/js/leaflet.extra-markers.min.js') }}"></script>
     
     
     <!-- Our JavaScript file -->
-    <script src="/../Static/js/ForReview_logic6.js"></script>
+    <script src="{{ url_for('static', filename='/js/ForReview_logic6.js') }}"></script>
     
 </body>
     

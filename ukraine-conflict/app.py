@@ -10,6 +10,7 @@ import psycopg2
 from config import username
 from config import password
 from config import databse_uri
+import json
 
 app = Flask(__name__)
 
@@ -53,12 +54,17 @@ def data():
 
     return jsonify(results)
 
-@app.route("/maps")
-def maps():
-    return render_template("maps.html")
+@app.route("/maps", methods=['POST','GET'])
+def maps(): 
+    # geojson = request.json("geojson.json")
+    # fileData = 0;
+    # with open('geojson.json', 'r') as f:
+    #   fileData = json.load(f)
+    #   f.close()   
+    return render_template("maps.html")     
 
 @app.route("/dataPage")
-def dataPage():
+def datapage():
     return render_template("dataPage.html")
 
 @app.route("/charts")

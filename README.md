@@ -6,9 +6,9 @@ Using data from [ACLED](https://acleddata.com/ukraine-crisis/#data) we examined 
 To see the pages please click: [Ukraine Conflict](https://cekiorpes-ukraine-conflict.herokuapp.com/)
 
 ### Contributors
-Phoebe Burns
-Kathy Harris
-Michael Chrzanowski
-Ian Lekawa
-Julia Smirny
-Caroline Kiorpes
+- Phoebe Burns
+- Kathy Harris
+- Michael Chrzanowski
+- Ian Lekawa
+- Julia Smirny
+- Caroline Kiorpes

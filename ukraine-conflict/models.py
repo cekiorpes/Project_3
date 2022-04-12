@@ -1,4 +1,4 @@
-from app import db
+from .app import db
 
 class Ukraine(db.Model):
     __tablename__ = "Ukraine_Conflict"

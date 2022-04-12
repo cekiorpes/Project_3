@@ -249,8 +249,3 @@ body {
     padding: 10px;
     border: black 1px solid;
   }
-
-  #png {
-    position: absolute;
-    z-index: 100;
-  }

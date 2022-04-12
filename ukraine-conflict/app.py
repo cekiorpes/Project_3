@@ -33,7 +33,7 @@ def home():
 # Route to get data from database
 @app.route("/api/data")
 def data():
-    from models import Ukraine
+    from .models import Ukraine
     
     conflicts = db.session.query(Ukraine.EVENT_ID_CNTY, Ukraine.EVENT_ID_NO_CNTY, Ukraine.EVENT_DATE, Ukraine.EVENT_TYPE, Ukraine.SUB_EVENT_TYPE, Ukraine.ACTOR1, Ukraine.LOCATION, Ukraine.LATITUDE, Ukraine.LONGITUDE, Ukraine.SOURCE, Ukraine.NOTES, Ukraine.FATALITIES).all()
 

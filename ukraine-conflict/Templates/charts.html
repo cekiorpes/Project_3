@@ -59,12 +59,18 @@
             </div>
         </header>
   </div>
-  <div>
-    <img src="Graphs.JKS/casualties.png" />
-    <img src="Graphs.JKS/Ukranian_refugees_per_country.png" />
-    <img src="Graphs.JKS/damages.png" />
-    <img src="Graphs.JKS/Ukranian_refugees.png" />
-    <img src="Graphs.JKS/border_crossing_points.png" />
+  <div class="row">
+    <img id="png" src="{{ url_for('static', filename='/Graphs.JKS/casualties.png') }}" />
+  </div>
+  <div class="row">  
+    <img id="png" src="{{ url_for('static', filename='/Graphs.JKS/damages.png') }}" />
+  </div>
+  <div class="row">
+    <img id="png" src="{{ url_for('static', filename='/Graphs.JKS/refugees.png') }}" />
+  </div>
+  <div class="row">
+    <img id="png" src="{{ url_for('static', filename='/Graphs.JKS/Ukranian_refugees_per_country.png') }}" />
+    <img id="png" src="{{ url_for('static', filename='/Graphs.JKS/border_crossing_points.png') }}" />
   </div>
 </body>
 </html>

@@ -9,15 +9,11 @@ from flask import (
     json, 
     current_app as app)
 import psycopg2
-# from config import username
-# from config import password
-# from config import databse_uri
 import json
 
 app = Flask(__name__)
 
 from flask_sqlalchemy import SQLAlchemy
-# app.config['SQLALCHEMY_DATABASE_URI'] = f"postgresql://{username}:{password}@localhost:5432/Project3"
 app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://icozvjgbqeahrn:a22d37e8ffc35c492571cbe3372236941fa31186769777bea5a23a048426e336@ec2-52-3-60-53.compute-1.amazonaws.com:5432/df4rect1t93j"
 
 # Remove tracking modifications
